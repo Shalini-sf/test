@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0 (Python 3.11.0 on win32)" generated="20221121 12:10:27.817" rpa="false" schemaversion="3">
+<suite id="s1" name="Fielstest" source="C:\Users\shalini.gupta\PycharmProjects\pythonProject1\testclm\fielstest.robot">
+<test id="s1-t1" name="New smart Field" line="16">
+<kw name="Start test case clm" library="commonconfig" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${ url1}</arg>
+<arg>${browser1}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221121 12:10:28.088" level="INFO">Opening browser 'chrome' to base url 'https://rakuten-clm-shell-qa.sourcef.us/'.</msg>
+<status status="PASS" starttime="20221121 12:10:28.087" endtime="20221121 12:10:36.509"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221121 12:10:36.510" endtime="20221121 12:10:36.646"/>
+</kw>
+<status status="PASS" starttime="20221121 12:10:28.087" endtime="20221121 12:10:36.646"/>
+</kw>
+<kw name="Login test case" library="login">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//div[@class="username-container fieldMargin "]/div/div/input</arg>
+<arg>yuvraj.shukla+superadmin@sourcefuse.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221121 12:10:36.649" level="INFO">Typing text 'yuvraj.shukla+superadmin@sourcefuse.com' into text field '//div[@class="username-container fieldMargin "]/div/div/input'.</msg>
+<msg timestamp="20221121 12:10:36.810" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221121 12:10:36.810" level="FAIL">Element with locator '//div[@class="username-container fieldMargin "]/div/div/input' not found.</msg>
+<status status="FAIL" starttime="20221121 12:10:36.649" endtime="20221121 12:10:36.813"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@placeholder="Password"]</arg>
+<arg>R@kuten@12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221121 12:10:36.813" endtime="20221121 12:10:36.813"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id="kc-login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221121 12:10:36.814" endtime="20221121 12:10:36.814"/>
+</kw>
+<status status="FAIL" starttime="20221121 12:10:36.649" endtime="20221121 12:10:36.814"/>
+</kw>
+<kw name="Contract manager test" library="vendor">
+<status status="NOT RUN" starttime="20221121 12:10:36.815" endtime="20221121 12:10:36.815"/>
+</kw>
+<kw name="Add new field" library="smart field">
+<status status="NOT RUN" starttime="20221121 12:10:36.815" endtime="20221121 12:10:36.815"/>
+</kw>
+<status status="FAIL" starttime="20221121 12:10:28.086" endtime="20221121 12:10:36.815">Element with locator '//div[@class="username-container fieldMargin "]/div/div/input' not found.</status>
+</test>
+<status status="FAIL" starttime="20221121 12:10:27.819" endtime="20221121 12:10:36.815"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Fielstest">Fielstest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
